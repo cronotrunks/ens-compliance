@@ -1,5 +1,6 @@
 [org/gnome/desktop/background]
 picture-uri='file:///usr/share/backgrounds/bg-crononauta-1920x1080-dark.png'
+picture-uri-dark='file:///usr/share/backgrounds/bg-crononauta-1920x1080-dark.png'
 picture-options='zoom'
-[org/gnome/login-screen]
-logo='/usr/share/backgrounds/bg-crononauta-1920x1080-dark.png'
+[org/gnome/desktop/screensaver]
+picture-uri='file:///usr/share/backgrounds/bg-crononauta-1920x1080-dark.png'
