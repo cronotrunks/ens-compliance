@@ -1,0 +1,22 @@
+#!/bin/sh
+set -e
+update-rc.d clamav-freshclam defaults
+systemctl enable clamav-daemon
+systemctl start clamav-daemon
+
+[ -z "$(grep 'ExcludePath ^/proc' /etc/clamav/clamd.conf)" ] && printf "ExcludePath ^/proc\nExcludePath ^/sys\nExcludePath ^/run\nExcludePath ^/dev\nExcludePath ^/snap\nExcludePath ^/var/lib/lxcfs/cgroup\nExcludePath ^/var/spool/postfix/private\nExcludePath ^/var/spool/postfix/public\nExcludePath ^/var/spool/postfix/dev" | sudo tee -a /etc/clamav/clamd.conf
+
+echo "Configuring MaxDirectoryRecursion in clamd.conf. It may take some seconds..."
+MAXRECURSION=$(sudo find / | awk 'FS="/" {print(NF)}' | sort --general-numeric-sort | tail --lines 1)
+
+sed -i -e "s/MaxDirectoryRecursion 15/MaxDirectoryRecursion $MAXRECURSION/" /etc/clamav/clamd.conf
+
+echo -e "[Unit]\nDescription=Execution of full system ClamAV scan\n[Service]\nExecStart=/usr/bin/clamdscan --fdpass --multiscan --log=/var/log/clamav/clamdscan.log /\nUser=root" | sudo tee /etc/systemd/system/clamavweekly.service
+echo -e "[Unit]\nDescription=run clamavweekly.service\n[Timer]\nOnCalendar=Sun *-*-* 23:05:00\nRandomizedDelaySec=3600\nUnit=clamavweekly.service\n[Install]\nWantedBy=multi-user.target" | sudo tee /etc/systemd/system/clamavweekly.timer
+
+systemctl enable clamavweekly.timer
+systemctl start clamavweekly.timer
+systemctl daemon-reload
+
+pam-auth-update
+dconf update

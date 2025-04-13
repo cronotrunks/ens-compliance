@@ -1,0 +1,12 @@
+Name: Faillock authentication
+Default: yes
+Priority: 255
+Auth-Type: Primary
+Auth:
+	[success=3 default=ignore] pam_sss.so use_first_pass
+	[default=die] pam_faillock.so authfail audit even_deny_root deny=5 unlock_time=900
+	sufficient pam_faillock.so authsucc audit even_deny_root deny=5 unlock_time=900
+Auth-Initial:
+	[success=3 default=ignore] pam_sss.so use_first_pass
+	[default=die] pam_faillock.so authfail audit even_deny_root deny=5 unlock_time=900
+	sufficient pam_faillock.so authsucc audit even_deny_root deny=5 unlock_time=900

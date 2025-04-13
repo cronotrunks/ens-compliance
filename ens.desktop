@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/bin/ens-notification.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=Aviso de Inicio de Sesión
+Comment=Mostrar aviso a los usuarios al iniciar sesión

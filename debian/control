@@ -1,0 +1,25 @@
+Source: ens-compliance
+Section: admin
+Priority: optional
+Maintainer: Javier Carranza <javier.carranza@crononauta.com>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.6.0
+Homepage: https://ens.ccn.cni.es/es/que-es-el-ens
+#Vcs-Git: https://github.org/cronotrunks/ens-compliance.git
+#Vcs-Browser: https://github.org/cronotrunks/ens-compliance
+
+Package: ens-compliance
+Architecture: all
+Depends: ${misc:Depends}, ${shlibs:Depends}, clamav, clamav-daemon, clamav-freshclam, libpam-modules, systemd, policykit-1, zenity, lightdm | gdm3 | sddm, dconf-cli
+Recommends: gnome-shell | kde-plasma-desktop | xfce4 | lxde
+Suggests: apparmor, aide, auditd
+Description: ENS compliance configuration
+ This package implements the technical measures required for
+ compliance with the National Security Framework (ENS) on the system.
+ .
+ It includes the following features:
+  * Installation and configuration of ClamAV antivirus
+  * Legal warning message at login
+  * Limitation of failed authentication attempts
+  * Corporate wallpapers
+  * General security configuration according to ENS

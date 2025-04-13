@@ -1,0 +1,14 @@
+Name: Faillock pre-authentication
+Default: yes
+Priority: 257
+Auth-Type: Primary
+Auth:
+	required pam_faillock.so preauth audit even_deny_root deny=5 unlock_time=900
+Auth-Initial:
+	required pam_faillock.so preauth audit even_deny_root deny=5 unlock_time=900
+Account-Type: Primary
+Account:
+	required pam_faillock.so
+Account-Initial:
+	required pam_faillock.so
+

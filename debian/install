@@ -1,0 +1,8 @@
+# ENS compliance files
+pam-configs/* usr/share/pam-configs/
+bg-crononauta-1920x1080-dark.png usr/share/backgrounds/
+ens-notification.sh usr/bin/
+ens.desktop etc/xdg/autostart/
+slick-greeter.conf /etc/lightdm/
+lightdm.conf /etc/lightdm/
+01-gdm-background /etc/dconf/db/gdm.d/

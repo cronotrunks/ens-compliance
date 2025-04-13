@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+BUILDDIR=$(CURDIR)/debian/build
+
+%:
+	dh $@
+
+override_dh_auto_clean:
+	rm -rf $(BUILDDIR)
+
+override_dh_installchangelogs:
+	dh_installchangelogs Changelog
