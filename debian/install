@@ -6,3 +6,4 @@ ens.desktop etc/xdg/autostart/
 slick-greeter.conf /etc/lightdm/
 lightdm.conf /etc/lightdm/
 01-gdm-background /etc/dconf/db/gdm.d/
+apt-conf.d/* /etc/apt/apt.conf.d/
