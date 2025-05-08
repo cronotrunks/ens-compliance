@@ -29,6 +29,9 @@ Al instalar este paquete, se aplicarán las siguientes configuraciones:
   - `sddm`
   - `gdm3`
 
+- ✅ **Blacklists configurables para los navegadores Google Chrome y Mozilla Firefox**  
+  Se han generado un par de ficheros de ejemplo con urls prohibidas para los navegadores citados.
+
 ## Instalación
 
 Para instalar este paquete, puedes usar tu gestor de paquetes habitual (por ejemplo `dpkg -i` o `apt` si se proporciona en un repositorio).
