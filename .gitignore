@@ -1,2 +1,4 @@
 debian/ens-compliance/
 debian/.debhelper/
+debian/files
+debian/ens-compliance.

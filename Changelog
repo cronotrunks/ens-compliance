@@ -1,3 +1,10 @@
+ens-compliance (0.2) bookworm; urgency=low
+
+  * Gives support to browser blacklists.
+  * Gives support to multiple Login managers.
+
+ -- Javier Carranza <javier.carranza@crononauta.com>  Sun, 13 Apr 2025 17:59:40 +0200
+
 ens-compliance (0.1) bookworm; urgency=low
 
   * Initial Release.

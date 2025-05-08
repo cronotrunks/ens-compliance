@@ -1,0 +1,16 @@
+{
+  "policies": {
+    "WebsiteFilter": {
+      "Block": [
+        "https://www.marca.com",
+        "https://www.as.com",
+        "https://www.mundodeportivo.com",
+        "https://www.sport.com",
+        "https://marca.com",
+        "https://as.com",
+        "https://mundodeportivo.com",
+        "https://sport.com"
+      ]
+    }
+  }
+}

@@ -7,7 +7,7 @@ systemctl start clamav-daemon
 [ -z "$(grep 'ExcludePath ^/proc' /etc/clamav/clamd.conf)" ] && printf "ExcludePath ^/proc\nExcludePath ^/sys\nExcludePath ^/run\nExcludePath ^/dev\nExcludePath ^/snap\nExcludePath ^/var/lib/lxcfs/cgroup\nExcludePath ^/var/spool/postfix/private\nExcludePath ^/var/spool/postfix/public\nExcludePath ^/var/spool/postfix/dev" | sudo tee -a /etc/clamav/clamd.conf
 
 echo "Configuring MaxDirectoryRecursion in clamd.conf. It may take some seconds..."
-MAXRECURSION=$(sudo find / | awk 'FS="/" {print(NF)}' | sort --general-numeric-sort | tail --lines 1)
+MAXRECURSION=$(sudo find / 2> /dev/null | awk 'FS="/" {print(NF)}' | sort --general-numeric-sort | tail --lines 1)
 
 sed -i -e "s/MaxDirectoryRecursion 15/MaxDirectoryRecursion $MAXRECURSION/" /etc/clamav/clamd.conf
 
@@ -21,4 +21,3 @@ systemctl enable apt-daily-upgrade.timer
 systemctl daemon-reload
 
 pam-auth-update
-dconf update

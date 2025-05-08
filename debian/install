@@ -5,5 +5,8 @@ ens-notification.sh usr/bin/
 ens.desktop etc/xdg/autostart/
 slick-greeter.conf /etc/lightdm/
 lightdm.conf /etc/lightdm/
-01-gdm-background /etc/dconf/db/gdm.d/
+greeter.dconf-defaults /etc/gdm3/
+sddm.conf /etc/
 apt-conf.d/* /etc/apt/apt.conf.d/
+policies.json /etc/firefox/policies/
+blocklist.json /etc/opt/chrome/policies/managed/
