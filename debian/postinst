@@ -19,5 +19,6 @@ systemctl start clamavweekly.timer
 systemctl enable apt-daily.timer
 systemctl enable apt-daily-upgrade.timer
 systemctl daemon-reload
+systemctl restart udev
 
 pam-auth-update

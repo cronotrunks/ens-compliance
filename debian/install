@@ -8,5 +8,6 @@ lightdm.conf /etc/lightdm/
 greeter.dconf-defaults /etc/gdm3/
 sddm.conf /etc/
 apt-conf.d/* /etc/apt/apt.conf.d/
+rules.d/* /etc/udev/rules.d/
 policies.json /etc/firefox/policies/
 blocklist.json /etc/opt/chrome/policies/managed/

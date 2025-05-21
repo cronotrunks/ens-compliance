@@ -1,9 +1,16 @@
+ens-compliance (0.3) bookworm; urgency=low
+
+  * Avoids the ability to detect and mount usb storage devices.
+  * Adds a new script to securely wipe disks.
+
+ -- Javier Carranza <javier.carranza@crononauta.com>  Wed, 21 May 2025 19:54:35 +0200
+
 ens-compliance (0.2) bookworm; urgency=low
 
   * Gives support to browser blacklists.
   * Gives support to multiple Login managers.
 
- -- Javier Carranza <javier.carranza@crononauta.com>  Sun, 13 Apr 2025 17:59:40 +0200
+ -- Javier Carranza <javier.carranza@crononauta.com>  Sun, 13 Apr 2025 20:11:15 +0200
 
 ens-compliance (0.1) bookworm; urgency=low
 

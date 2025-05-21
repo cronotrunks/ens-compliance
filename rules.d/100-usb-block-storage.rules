@@ -1,0 +1,2 @@
+# Avoid to mount any USB storage device in order to comply with ENS
+SUBSYSTEM=="usb", ATTR{bInterfaceClass}=="08", ACTION=="add", RUN+="/bin/sh -c 'echo 0 > /sys$devpath/authorized'"
