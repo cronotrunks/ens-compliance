@@ -2,8 +2,10 @@
 pam-configs/* usr/share/pam-configs/
 bg-crononauta-1920x1080-dark.png usr/share/backgrounds/
 ens-notification.sh usr/bin/
+browser_cookie_cleaner.sh usr/bin/
 wipe_hdd.sh usr/bin/
 ens.desktop etc/xdg/autostart/
+browser_cookie_cleaner.desktop etc/xdg/autostart/
 slick-greeter.conf etc/lightdm/
 lightdm.conf etc/lightdm/
 greeter.dconf-defaults etc/gdm3/

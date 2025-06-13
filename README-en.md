@@ -39,6 +39,9 @@ When installing this package, the following configurations will be applied:
 - 🚫 **Configurable blacklists for Google Chrome and Mozilla Firefox browsers**
   A couple of example files with prohibited URLs have been generated for the aforementioned browsers.
 
+- 💾 **Adds a script that allows the cleaning of cookies from the user's browsers**
+  A bash script is added that allows the cleaning of cookies from the browsers used by the user (supports Firefox, Chrome, Chromium and Brave).
+
 ## 🛠️ Debian Package Generation
 
 ### 🔧 Requirements to generate the Debian package

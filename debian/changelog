@@ -1,3 +1,10 @@
+ens-compliance (0.4) bookworm; urgency=low
+
+  * Adds more forbidden urls to blocklist.json
+  * Adds a new script to clean browser cookies older than 3 months.
+
+ -- Javier Carranza <javier.carranza@crononauta.com>  Fri, 13 Jun 2025 18:57:10 +0200
+
 ens-compliance (0.3) bookworm; urgency=low
 
   * Avoids the ability to detect and mount usb storage devices.

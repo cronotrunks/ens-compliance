@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/bin/browser_cookie_cleaner.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=Limpiador de cookies
+Comment=Mostrar aviso de cookies antiguas a los usuarios al iniciar sesión
