@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=/usr/bin/browser_cookie_cleaner.sh
+Exec=/usr/bin/cookies-cleanup.sh
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true

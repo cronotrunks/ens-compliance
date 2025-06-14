@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/bin/wallpaper.sh
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=Fijador de fondo de pantalla
+Comment=Cambia el fondo de pantalla al iniciar sesión

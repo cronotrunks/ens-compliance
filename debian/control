@@ -10,7 +10,7 @@ Homepage: https://ens.ccn.cni.es/es/que-es-el-ens
 
 Package: ens-compliance
 Architecture: all
-Depends: ${misc:Depends}, ${shlibs:Depends}, clamav, clamav-daemon, clamav-freshclam, libpam-modules, systemd, policykit-1, zenity, lightdm | gdm3 | sddm, dconf-cli, coreutils, hdparm
+Depends: ${misc:Depends}, ${shlibs:Depends}, clamav, clamav-daemon, clamav-freshclam, libpam-modules, systemd, policykit-1, zenity, lightdm | gdm3 | sddm, dconf-cli, coreutils, hdparm, nitrogen
 Recommends: gnome-shell | kde-plasma-desktop | xfce4 | lxde
 Suggests: apparmor, aide, auditd
 Description: ENS compliance configuration
