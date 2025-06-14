@@ -18,7 +18,7 @@ When installing this package, the following configurations will be applied:
   The system is configured to block a user for **15 minutes** after **5 failed login attempts** (through the `faillock` security module).
 
 - 🖼️ **Corporate wallpaper**
-  A corporate image is installed in `/usr/share/backgrounds/` so the user can set it as desktop background.
+  A corporate image is installed in `/usr/share/backgrounds/` which is set up as wallpaper.
 
 - 🔐 **Background configuration on login screen (LightDM)**
   **LightDM** is configured to automatically display the corporate background during login.

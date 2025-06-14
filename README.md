@@ -18,7 +18,7 @@ Al instalar este paquete, se aplicarán las siguientes configuraciones:
   Se configura el sistema para bloquear a un usuario durante **15 minutos** tras **5 intentos fallidos** de login (mediante el módulo de seguridad `faillock`).
 
 - 🖼️ **Wallpaper corporativo**
-  Se instala una imagen corporativa en `/usr/share/backgrounds/` para que el usuario pueda establecerla como fondo de escritorio.
+  Se instala una imagen corporativa en `/usr/share/backgrounds/`, que se establece como fondo de escritorio.
 
 - 🔐 **Configuración del fondo en pantalla de login (LightDM)**
   Se configura **LightDM** para mostrar automáticamente el fondo corporativo durante el login.
