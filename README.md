@@ -29,6 +29,9 @@ Al instalar este paquete, se aplicarán las siguientes configuraciones:
   - `sddm`
   - `gdm3`
 
+- 🛠 **Actualización automática y segura del sistema**
+Configura APT para actualizar listas de paquetes, descargar e instalar actualizaciones críticas automáticamente cada día, limpiar cachés semanalmente y reiniciar el sistema de forma controlada a las 02:00 si es necesario.
+
 - 🚫 **Desactiva la posibilidad de utilizar dispositivos de almacenamiento USB**
   Se configura udev apropiadamente para impedir el reconocimiento de dispositivos de almacenamiento USB, eliminando el riesgo de exposición a agentes externos.
 
