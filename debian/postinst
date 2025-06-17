@@ -20,5 +20,6 @@ systemctl enable apt-daily.timer
 systemctl enable apt-daily-upgrade.timer
 systemctl daemon-reload
 systemctl restart udev
+systemctl restart systemd-resolved
 
 pam-auth-update

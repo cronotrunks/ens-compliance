@@ -45,6 +45,11 @@ Configura APT para actualizar listas de paquetes, descargar e instalar actualiza
 - 🍪 **Añade un script que permite la limpieza de cookies de los navegadores del usuario**
   Se añade un script bash que permite la limpieza de cookies de los navegadores utilizados por el usuario (soporta Firefox, Chrome, Chromium y Brave).
 
+- 🌍 **Navegación segura sobre DNS**
+  Configura el sistema y los navegadores principales (Firefox y Chrome) para utilizar DNS over TLS y DNSSEC. Añade los servidores DNS de Cloudflare por defecto al sistema para garantizar esta configuración.
+
+- 🛠 **Personalización de configuraciones para los navegadores Google Chrome y Mozilla Firefox**
+  Se han añadido ajustes adicionales a los ficheros de configuración de los navegadores para evitar brechas de seguridad.
 
 ## 🛠️ Generación del paquete debian
 

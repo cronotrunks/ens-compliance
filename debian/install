@@ -16,3 +16,4 @@ src/apt-conf.d/* etc/apt/apt.conf.d/
 src/rules.d/* etc/udev/rules.d/
 src/policies.json etc/firefox/policies/
 src/blocklist.json etc/opt/chrome/policies/managed/
+src/custom-resolved.conf etc/systemd/resolved.conf.d/

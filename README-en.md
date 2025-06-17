@@ -45,6 +45,12 @@ Configures APT to update package lists, download and install critical updates da
 - 🍪 **Adds a script that allows the cleaning of cookies from the user's browsers**
   A bash script is added that allows the cleaning of cookies from the browsers used by the user (supports Firefox, Chrome, Chromium and Brave).
 
+- 🌍 **Secure Browsing over DNS**
+  Configures the system and major browsers (Firefox and Chrome) to use DNS over TLS and DNSSEC. Cloudflare's DNS servers are set as the system defaults to ensure a secure DNS resolution setup.
+
+- 🛠 **Custom Configuration for Google Chrome and Mozilla Firefox**
+  Additional settings have been applied to the browser configuration files to prevent security vulnerabilities and enforce safer defaults.
+
 ## 🛠️ Debian Package Generation
 
 ### 🔧 Requirements to generate the Debian package
