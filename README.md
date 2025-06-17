@@ -8,47 +8,47 @@ Está diseñado para ser instalado en entornos corporativos donde se desee aplic
 
 Al instalar este paquete, se aplicarán las siguientes configuraciones:
 
-- 🦠 **Antivirus ClamAV**
+- 🦠 **Antivirus ClamAV**.
   Se instala y configura correctamente el antivirus [ClamAV](https://www.clamav.net/) para protección básica frente a malware.
 
-- 📢 **Aviso informativo en el login (popup)**
+- 📢 **Aviso informativo en el login (popup)**.
   Se muestra un mensaje de advertencia o información al usuario cuando inicia sesión, mediante una ventana emergente (popup), avisando del uso correcto del sistema.
 
-- 👥 **Bloqueo de usuarios tras múltiples intentos fallidos**
+- 👥 **Bloqueo de usuarios tras múltiples intentos fallidos**.
   Se configura el sistema para bloquear a un usuario durante **15 minutos** tras **5 intentos fallidos** de login (mediante el módulo de seguridad `faillock`).
 
-- 🖼️ **Wallpaper corporativo**
+- 🖼️ **Wallpaper corporativo**.
   Se instala una imagen corporativa en `/usr/share/backgrounds/`, que se establece como fondo de escritorio.
 
-- 🖼️ **Configuración del fondo en pantalla de login (LightDM)**
+- 🖼️ **Configuración del fondo en pantalla de login (LightDM)**.
   Se configura **LightDM** para mostrar automáticamente el fondo corporativo durante el login.
 
-- 👥 **Ocultación de la lista de usuarios en pantalla de login**
+- 👥 **Ocultación de la lista de usuarios en pantalla de login**.
   Se configuran los siguientes gestores de sesión para ocultar la lista de usuarios y reforzar la privacidad:
   - `lightdm`
   - `sddm`
   - `gdm3`
 
-- 🛠 **Actualización automática y segura del sistema**
-Configura APT para actualizar listas de paquetes, descargar e instalar actualizaciones críticas automáticamente cada día, limpiar cachés semanalmente y reiniciar el sistema de forma controlada a las 02:00 si es necesario.
+- 🛠 **Actualización automática y segura del sistema**.
+  Configura APT para actualizar listas de paquetes, descargar e instalar actualizaciones críticas automáticamente cada día, limpiar cachés semanalmente y reiniciar el sistema de forma controlada a las 02:00 si es necesario.
 
-- 🚫 **Desactiva la posibilidad de utilizar dispositivos de almacenamiento USB**
+- 🚫 **Desactiva la posibilidad de utilizar dispositivos de almacenamiento USB**.
   Se configura udev apropiadamente para impedir el reconocimiento de dispositivos de almacenamiento USB, eliminando el riesgo de exposición a agentes externos.
 
-- 💾 **Añade un script que permite el borrado seguro de cualquier dispositivo de almacenamiento**
+- 💾 **Añade un script que permite el borrado seguro de cualquier dispositivo de almacenamiento**.
   Se añade un script bash que permite el borrado seguro de cualquier dispositivo de almacenamiento.
   Gracias a Teo Ruiz por su aportación original: https://gist.github.com/teoruiz/c6a200e4c3c891885acb53e4fb5faa70
 
-- 🚫 **Blacklists configurables para los navegadores Google Chrome y Mozilla Firefox**
+- 🚫 **Blacklists configurables para los navegadores Google Chrome y Mozilla Firefox**.
   Se han generado un par de ficheros de ejemplo con urls prohibidas para los navegadores citados.
 
-- 🍪 **Añade un script que permite la limpieza de cookies de los navegadores del usuario**
+- 🍪 **Añade un script que permite la limpieza de cookies de los navegadores del usuario**.
   Se añade un script bash que permite la limpieza de cookies de los navegadores utilizados por el usuario (soporta Firefox, Chrome, Chromium y Brave).
 
-- 🌍 **Navegación segura sobre DNS**
+- 🌍 **Navegación segura sobre DNS**.
   Configura el sistema y los navegadores principales (Firefox y Chrome) para utilizar DNS over TLS y DNSSEC. Añade los servidores DNS de Cloudflare por defecto al sistema para garantizar esta configuración.
 
-- 🛠 **Personalización de configuraciones para los navegadores Google Chrome y Mozilla Firefox**
+- 🛠 **Personalización de configuraciones para los navegadores Google Chrome y Mozilla Firefox**.
   Se han añadido ajustes adicionales a los ficheros de configuración de los navegadores para evitar brechas de seguridad.
 
 ## 🛠️ Generación del paquete debian
