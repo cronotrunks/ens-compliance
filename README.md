@@ -71,13 +71,17 @@ sudo apt-get install build-essential dh-python devscripts debhelper
 2. Navegue al directorio del proyecto:
 `cd ens-compliance`
 
-3. Genere el paquete Debian (este comando generará el paquete .deb en el directorio padre):
+3. Modifica el fichero src/bg-crononauta-1920x1080-dark.png con el fondo corporativo de tu empresa
+
+4. Modifica la home page de Google Chrome y Mozilla Firefox en los ficheros `src/blocklist.json` y `src/policies.json` respectivamente
+
+5. Genere el paquete Debian (este comando generará el paquete .deb en el directorio padre):
 `dpkg-buildpackage -us -uc -b`
 
-4. Instale el paquete generado:
+6. Instale el paquete generado:
 `sudo dpkg -i ../ens-compliance_*.deb`
 
-5. Resuelva posibles dependencias faltantes:
+7. Resuelva posibles dependencias faltantes:
 `sudo apt-get install -f`
 
 ## 📥 Instalación
